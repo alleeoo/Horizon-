@@ -1,0 +1,28 @@
+{
+  "name": "refactoring",
+  "version": "1.0.0",
+  "description": "Refactored movie app with unit testing using Jest and jsdom",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.0.0",
+    "jest-environment-jsdom": "^30.0.0",
+    "jsdom": "^26.1.0"
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-jsdom",
+    "roots": [
+      "<rootDir>/tests"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "node"
+    ],
+    "transform": {}
+  }
+}

@@ -1,0 +1,129 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Garamond;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #6667AB;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-family: Garamond;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 12px;
+  text-align: center;
+}
+
+button {
+  background-color: #6667AB;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #6667AB;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer-links {
+  color: #aaa;
+}
+
+td[contenteditable] {
+  outline: none;
+}
+
+.logo-container {
+  display: flex;
+  align-items: left;
+  padding: 10px;
+}
+
+.logo {
+  width: 60px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar {
+  background-color: #6667AB;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.form-container {
+  text-align: center;
+}
+/* Changes & Refactoring Points:
+
+Moved all embedded and inline styles to this file:
+
+Everything from the <style> tag in your original HTML was moved here.
+
+Grouped similar elements logically:
+
+For better readability and future maintenance, grouped elements like:
+
+css
+Copy
+Edit
+input, button {
+  ...
+}
+Created reusable layout classes:
+
+.logo-container, .form-container, .navbar, .footer-links created for layout and spacing.
+
+Easier to apply consistent layout across multiple pages if needed.
+
+Added navigation styles under .navbar a:
+
+All navbar anchor (<a>) elements are styled with consistent spacing, font size, and color.
+
+Introduced clear separation of concerns:
+
+Now this file handles all appearance/styling responsibilities, while HTML holds structure and JS holds behavior.
+
+Improved maintainability:
+
+If you need to update button styles or background color, it's now easy and centralized. */

@@ -1,0 +1,53 @@
+/* Refactored CSS for RF_Login */
+/* General reset for body */
+        /* Moved font-family to body for consistency */
+        body {
+            background-color: #000;
+            font-family: Garamond, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        /* Combined background color and padding styles */
+        .container {
+            background-color: #1a1a1a;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #6667AB;
+            width: 300px;
+        }
+        /* Centered h2 text for consistency */
+        h2 {
+            text-align: center;
+            color: #FFD700;
+            margin-bottom: 20px; /* Added spacing below h2 */
+        }
+        /* Adjusted input and button styles for consistency */
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        /* Button color matches box shadow */
+        button {
+            background-color: #6667AB;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        /* Hover effect for links */
+        a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }

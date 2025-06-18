@@ -1,0 +1,59 @@
+body {
+    background-color: #000;
+    font-family: Garamond;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #6667AB;
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    color: #FFD700;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-family: Garamond;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6667AB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Reusability & Clarity: Defined a consistent style for inputs, buttons, and layout.
+
+Modern UI Practices: Applied flex layout and soft UI shadowing. */

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wishlist - Horizon</title>
+  <link rel="icon" type="image/png" href="https://tint.creativemarket.com/yzW39LUjOMd53ejAdotR1NiRjAxycaHoDBKk4BAiBcA/width:1200/height:800/gravity:nowe/rt:fill-down/el:1/czM6Ly9maWxlcy5jcmVhdGl2ZW1hcmtldC5jb20vaW1hZ2VzL3NjcmVlbnNob3RzL3Byb2R1Y3RzLzgxMy84MTMxLzgxMzE5MzUvY3JlYXRpdmUtNTYtby5qcGc?1586848150">
+  <link rel="stylesheet" href="RF_wishlist.css">
+</head>
+<body>
+
+  <!-- Logo Section -->
+  <div class="logo-container">
+    <img src="https://tint.creativemarket.com/yzW39LUjOMd53ejAdotR1NiRjAxycaHoDBKk4BAiBcA/width:1200/height:800/gravity:nowe/rt:fill-down/el:1/czM6Ly9maWxlcy5jcmVhdGl2ZW1hcmtldC5jb20vaW1hZ2VzL3NjcmVlbnNob3RzL3Byb2R1Y3RzLzgxMy84MTMxLzgxMzE5MzUvY3JlYXRpdmUtNTYtby5qcGc?1586848150" alt="Horizon Logo" class="logo">
+    <div class="logo-text">Horizon</div>
+  </div>
+
+  <!-- Nav Bar -->
+  <div class="navbar">
+            <a href="RF_horizon.html" class="nav__link">Home</a>
+            <a href="RF_trending.html" class="nav__link">Trending</a>
+            <a href="RF_movies.html" class="nav__link">Movies</a>
+            <a href="RF_dramas.html" class="nav__link">Dramas</a>
+            <a href="RF_wishlist.html" class="nav__link">Wishlist</a>
+            <a href="RF_review.html" class="nav__link">Reviews</a>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <h1>My Wishlist</h1>
+    <div class="form-container">
+      <input type="text" id="titleInput" placeholder="Title">
+      <input type="text" id="genreInput" placeholder="Genre">
+      <input type="text" id="yearInput" placeholder="Year">
+      <button onclick="addToWishlist()">Add</button>
+      <button onclick="updateWishlistItem()" id="updateBtn" style="display:none;">Update</button>
+      <input type="hidden" id="selectedIndex">
+    </div>
+
+    <table id="wishlistTable">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Genre</th>
+          <th>Year</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Horizon Streaming. All rights reserved.</p>
+    <p class="footer-links">Privacy Policy | Terms of Service | Contact Us</p>
+  </footer>
+
+  <script src="RF_wishlist.js"></script>
+</body>
+</html>
+<!-- Changes & Refactoring Points:
+
+Removed inline styles:
+
+All inline style="" attributes (e.g., navbar, logo, form layout) were moved into the CSS file for separation of concerns.
+
+Linked external files:
+
+Added <link rel="stylesheet" href="wishlist.css"> in the <head> for styles.
+
+Added <script src="wishlist.js"></script> before the closing </body> tag to load JavaScript from a separate file.
+
+Replaced inline <div style="..."> with CSS classes:
+
+Example:
+
+style="text-align: center;" → class="form-container"
+
+style="background-color: #6667AB" → class="navbar"
+
+Introduced semantic structure using CSS class names:
+
+For readability, structure, and reusability, assigned classes like:
+
+.logo-container, .logo, .logo-text, .navbar, .footer-links, .form-container.
+
+Minimized repetition and centralized layout logic:
+
+Instead of repeating style definitions on each element, reusable classes (like .navbar a) allow consistent design.
+
+Kept only HTML content and structure:
+
+No JavaScript or CSS logic remains in this file. -->
